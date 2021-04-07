@@ -2,9 +2,10 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const jest = require("jest")
 
-const Employee = require("../lib/employee")
-const Engineer = require("../lib/engineer")
-const Manager = require("../lib/manager")
+const Employee = require("./lib/employee")
+const Engineer = require("./lib/engineer")
+const Manager = require("./lib/manager")
+const Intern = require("./lib/intern")
 
 let finalTeamArray = [];
 
@@ -151,9 +152,6 @@ function compileTeam() {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>${finalTeamArray[0]}</title>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <style>
-     ${style}
-    </style>
 </head>
 <body>
     <div class="banner-bar">
