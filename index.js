@@ -1,10 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const style = require("./templates/css")
+const jest = require("jest")
 
-const Employee = require("./lib/employee")
-const Engineer = require("./lib/engineer")
-const Manager = require("./lib/manager")
+const Employee = require("../lib/employee")
+const Engineer = require("../lib/engineer")
+const Manager = require("../lib/manager")
 
 let finalTeamArray = [];
 
